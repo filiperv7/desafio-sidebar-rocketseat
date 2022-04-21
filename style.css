@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+
+  font-family: 'Poppins', sans-serif;
+  color: #084236;
+
+  background-color: #DCE4E3;
+
+  overflow: hidden;
+}
+
+header, .aba, footer>.container{
+  display: flex;
+
+  align-items: center;
+}
+
+aside {
+  float: left;
+  height: 100vh;
+  width: 20vw;
+
+  padding: 24px 14px;
+
+  background-color: #18C29C;
+}
+
+header {
+  width: 100%;
+  height: 3.8rem;
+
+  align-items: flex-start;
+  justify-content: space-between;
+}
+header .logo {
+  width: 4.4rem;
+}
+header .menu {
+  width: 1.6rem;
+  height: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+
+  cursor: pointer;
+}
+header .menu>span {
+  display: block;
+  background-color: #084236;
+
+  height: .1875rem;
+  width: 100%;
+
+  border-radius: 50px;
+}
+
+form, input.search{
+  width: 100%;
+}
+input.search {
+  border: none;
+  border-radius: .3rem;
+
+  background-color: #8ED7C6;
+
+  padding: .7rem;
+}
+
+
+nav {
+  margin-top: 1rem;
+
+  height: 100%;
+}
+.aba {
+  margin-bottom: 1.8rem;
+  gap: .8rem;
+
+  cursor: pointer;
+}
+.aba h4 {
+  font-weight: 400;
+}
+
+nav footer {
+  position: absolute;
+  bottom: 0;
+}
+footer .container {
+  padding: 0 14px 0 7px;
+
+  width: 20vw;
+  margin-left: -14px;
+
+  justify-content: space-between;
+  background-color: #8ED7C6;
+}
+img.avatar {
+  width: 3rem;
+}
+footer .avatarDesc {
+  line-height: .8rem;
+
+  margin-top: .3rem;
+  margin-left: -2rem;
+}
+footer p {
+  font-size: .7rem;
+}
+footer .log-out {
+  cursor: pointer;
+}
+
+
+main {
+  float: left;
+  padding: 1.2rem;
+}
