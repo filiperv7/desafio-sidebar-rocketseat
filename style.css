@@ -3,15 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  /* a cada 1rem será considera 10px */
+  font-size: 62.5%;
+}
 html, body {
   height: 100%;
+  overflow: hidden;
 
   font-family: 'Poppins', sans-serif;
   color: #084236;
 
   background-color: #DCE4E3;
 
-  overflow: hidden;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 header, .aba, footer>.container{
@@ -28,21 +34,23 @@ aside {
   padding: 24px 14px;
 
   background-color: #18C29C;
+
+  transition: .43s ease-in-out;
 }
 
 header {
   width: 100%;
-  height: 3.8rem;
+  height: 5rem;
 
   align-items: flex-start;
   justify-content: space-between;
 }
 header .logo {
-  width: 4.4rem;
+  width: 7rem;
 }
 header .menu {
-  width: 1.6rem;
-  height: 1.4rem;
+  width: 2.5rem;
+  height: 2.5rem;
 
   display: flex;
   flex-direction: column;
@@ -50,12 +58,14 @@ header .menu {
   justify-content: space-around;
 
   cursor: pointer;
+
+  transition: .43s ease-in-out;
 }
 header .menu>span {
   display: block;
   background-color: #084236;
 
-  height: .1875rem;
+  height: .3rem;
   width: 100%;
 
   border-radius: 50px;
@@ -66,60 +76,92 @@ form, input.search{
 }
 input.search {
   border: none;
-  border-radius: .3rem;
+  border-radius: .45rem;
 
   background-color: #8ED7C6;
 
-  padding: .7rem;
+  padding: 1.2rem;
 }
 
 
 nav {
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 
   height: 100%;
 }
 .aba {
   margin-bottom: 1.8rem;
-  gap: .8rem;
+  gap: 1rem;
 
   cursor: pointer;
 }
-.aba h4 {
+.aba img {
+  margin-left: .5rem;
+}
+h4 {
+  font-size: 1.5rem;
   font-weight: 400;
 }
+
+/* ================================  FOOTER  ================================ */
 
 nav footer {
   position: absolute;
   bottom: 0;
 }
 footer .container {
-  padding: 0 14px 0 7px;
-
+  padding: 0 10px 0 7px;
+  
   width: 20vw;
   margin-left: -14px;
 
   justify-content: space-between;
   background-color: #8ED7C6;
+
+  transition: .43s ease-in-out;
 }
 img.avatar {
-  width: 3rem;
+  width: 4.5rem;
 }
 footer .avatarDesc {
-  line-height: .8rem;
+  line-height: 1.3rem;
 
-  margin-top: .3rem;
-  margin-left: -2rem;
+  margin-top: .5rem;
+  margin-left: -5.1rem;
 }
 footer p {
-  font-size: .7rem;
+  font-size: 1rem;
 }
 footer .log-out {
   cursor: pointer;
 }
 
+/* ================================  MAIN  ================================ */
 
 main {
   float: left;
-  padding: 1.2rem;
+  padding: 1.8rem;
+}
+main h2 {
+  font-size:  2rem;
+}
+
+
+
+
+/* ================================ SLIDER OF ASIDE ================================ */
+
+aside.slider, div.slider {
+  width: 6.6rem;
+}
+aside div.sliderMenu {
+ position: absolute;
+ left: 2.1rem;
+}
+aside div.slider .log-out {
+  position: absolute;
+  left: .5rem;
+}
+aside .hide {
+  opacity: 0;
 }
