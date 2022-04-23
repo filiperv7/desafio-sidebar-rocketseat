@@ -112,6 +112,7 @@ nav footer {
 footer .container {
   padding: 0 10px 0 7px;
   
+  height: 4.6rem;
   width: 20vw;
   margin-left: -14px;
 
@@ -136,11 +137,14 @@ footer .log-out {
   cursor: pointer;
 }
 
+
+
 /* ================================  MAIN  ================================ */
 
 main {
   float: left;
   padding: 1.8rem;
+  
 }
 main h2 {
   font-size:  2rem;
@@ -155,13 +159,12 @@ aside.slider, div.slider {
   width: 6.6rem;
 }
 aside div.sliderMenu {
- position: absolute;
- left: 2.1rem;
+ margin-right: .65rem;
 }
-aside div.slider .log-out {
-  position: absolute;
-  left: .5rem;
+aside img.log-out {
+  margin-left: 1rem;
 }
 aside .hide {
-  opacity: 0;
+  display: none;
 }
+
